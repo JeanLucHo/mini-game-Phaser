@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mini Shooter -- TP Haoyang et Jean-Luc</title>
+
+    <!--Pour l'ajustement sur les périphériques mobiles-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, 
+		maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-barstyle"
+      content="black-translucent"
+    />
+    <link
+      rel="shortcut icon"
+      href="medias/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="medias/favicons/favicon.png" type="image/png" />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="medias/favicons/favicon-32.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      sizes="64x64"
+      href="medias/favicons/favicon-64.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      sizes="96x96"
+      href="medias/favicons/favicon-96.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      sizes="196x196"
+      href="medias/favicons/favicon-196.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="medias/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="medias/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="medias/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="medias/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="medias/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="medias/favicons/apple-touch-icon-144x144.png"
+    />
+    <meta name="msapplication-TileImage" content="favicon-144.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+
+    <!--Style pour le body-->
+    <style type="text/css">
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      #changerOrientation {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #00d9ff;
+        background-image: url("medias/img/changerOrientation.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 100;
+        display: none;
+      }
+    </style>
+
+    <!--Intégration des scripts-->
+    <!--Librairie Phaser non minifié à partir d'un serveur CDN-->
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.22.0/dist/phaser.js"></script>
+
+    <!--Scripts du jeu / Module principal...-->
+    <script src="js/jeu.js" type="module"></script>
+  </head>
+
+  <body>
+    <div id="changerOrientation"></div>
+  </body>
+</html>
